@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <section id="about" className="w-full mx-auto px-4 bg-sky-300 py-8">
-            <div className="flex flex-col md:flex-row gap-8 items-start">
+        <section id="about" className="w-full mx-auto px-4 bg-sky-300 py-10" >
+            <div className="flex flex-col md:flex-row gap-8 items-start" data-aos='fade-down' data-aos-delay='500'>
                 {/* Left Side: About Dr. Jane Doe */}
                 <div className="flex-1 flex flex-col items-center md:items-start pt-20">
                     <Image

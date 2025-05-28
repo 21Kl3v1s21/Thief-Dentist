@@ -31,7 +31,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
         showNavbar ? 'translate-y-0' : '-translate-y-full'
-      } bg-sky-500 text-white p-4 flex items-center justify-between`}
+      } bg-sky-500/40 text-white p-4 flex items-center justify-between`}
     >
       <div className="flex items-center gap-2">
         <Link href="/">
@@ -59,6 +59,7 @@ export default function Navbar() {
         Home
       </Link>
       <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/#about">About</Link>
+      <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/#gallery">Gallery</Link>
       <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/services">Services</Link>
       <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/contact">Contact</Link>
 
