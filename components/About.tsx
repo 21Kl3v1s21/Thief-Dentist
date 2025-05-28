@@ -13,7 +13,7 @@ export default function About() {
                         height={128}
                         className="w-32 h-32 rounded-full mb-4 object-cover border-4 border-white shadow-lg"
                     />
-                    <h2 className="text-3xl font-semibold mb-4 text-white text-left">About Dr. Jane Doe</h2>
+                    <h2 className="text-3xl font-semibold mb-4 text-sky-600 text-left">About Dr. Jane Doe</h2>
                     <p className="text-gray-700 leading-relaxed">
                         Dr. Jane Doe is a highly experienced dentist dedicated to providing exceptional dental care to her patients. With years of experience and a passion for dentistry, she ensures every patient receives personalized and gentle treatment.
                     </p>
@@ -35,7 +35,7 @@ export default function About() {
                         height={400}
                         className="w-full h-130 rounded-lg mb-4 object-cover border-4 border-white shadow-lg"
                     />
-                    <h2 className="text-2xl font-semibold mb-4 text-white text-left">About Our Dental Office</h2>
+                    <h2 className="text-2xl font-semibold mb-4 text-sky-600 text-left">About Our Dental Office</h2>
                     <p className="text-gray-700 leading-relaxed">
                         Our office is equipped with state-of-the-art technology to ensure the highest quality of care. We strive to create a welcoming and relaxing environment for all our patients, making your dental visits as comfortable and stress-free as possible.
                     </p>

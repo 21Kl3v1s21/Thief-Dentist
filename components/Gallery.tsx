@@ -18,7 +18,7 @@ export default function Gallery() {
   return (
     <section id="gallery" className="py-16 px-4 bg-sky-500/50">
       <div className="max-w-6xl mx-auto" data-aos='fade-down' data-aos-delay='100'>
-        <h2 className="text-3xl font-semibold text-center mb-10">Our Clinic & Smiles</h2>
+        <h2 className="text-3xl font-semibold text-center mb-10 text-sky-700">Our Clinic & Smiles</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[1, 2, 3, 4, 5, 6].map((img) => (
             <a
