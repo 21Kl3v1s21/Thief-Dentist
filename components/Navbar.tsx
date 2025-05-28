@@ -64,7 +64,7 @@ export default function Navbar() {
 
       {/* Book Button — 1rem (ml-4) from links */}
       <Link href="/appointment" className="ml-10">
-        <button className="bg-white text-sky-700 font-semibold px-4 py-2 rounded hover:bg-gray-100 hover:text-underline transition cursor-pointer">
+        <button className="bg-white text-sky-700 font-semibold px-4 py-2 rounded hover:bg-sky-100 hover:text-underline transition cursor-pointer">
           Book
         </button>
       </Link>

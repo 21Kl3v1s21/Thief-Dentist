@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="/appointment"
-              className="bg-white text-sky-700 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition"
+              className="bg-white text-sky-700 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition hover:bg-sky-100"
             >
               Book an Appointment
             </a>

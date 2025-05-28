@@ -1,12 +1,46 @@
+import Image from 'next/image';
+
 export default function About() {
-  return (
-    <section id="about" className="max-w-4xl mx-auto text-center px-4 bg-sky-100">
-      <h2 className="text-3xl font-semibold mb-4 text-white">About Dr. Jane Doe</h2>
-      <p className="text-gray-700 leading-relaxed">
-        With over 15 years of experience, Dr. Jane Doe provides compassionate and comprehensive dental care
-        to families in our community. We combine the latest technology with a gentle touch to help you feel
-        confident and comfortable.
-      </p>
-    </section>
-  )
+    return (
+        <section id="about" className="w-full mx-auto px-4 bg-sky-300 py-8">
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+                {/* Left Side: About Dr. Jane Doe */}
+                <div className="flex-1 flex flex-col items-center md:items-start pt-20">
+                    <Image
+                        src="/images/denist-pfp.jpg"
+                        alt="Dr. Jane Doe"
+                        width={128}
+                        height={128}
+                        className="w-32 h-32 rounded-full mb-4 object-cover border-4 border-white shadow-lg"
+                    />
+                    <h2 className="text-3xl font-semibold mb-4 text-white text-left">About Dr. Jane Doe</h2>
+                    <p className="text-gray-700 leading-relaxed">
+                        Dr. Jane Doe is a highly experienced dentist dedicated to providing exceptional dental care to her patients. With years of experience and a passion for dentistry, she ensures every patient receives personalized and gentle treatment.
+                    </p>
+                    <div className="flex gap-4 mt-6 items-center justify-center text-center">
+                        <button className="bg-white text-sky-700 font-semibold px-5 py-2 rounded shadow hover:bg-sky-100 transition cursor-pointer">
+                            The Dentist
+                        </button>
+                        <button className="bg-white text-sky-700 font-semibold px-5 py-2 rounded shadow hover:bg-sky-100 transition cursor-pointer">
+                            Our Office
+                        </button>
+                    </div>
+                </div>
+                {/* Right Side: About Our Dental Office */}
+                <div className="flex-1 flex flex-col items-center md:items-start">
+                    <Image
+                        src="/images/office.jpg"
+                        alt="Dental Office"
+                        width={600}
+                        height={400}
+                        className="w-full h-130 rounded-lg mb-4 object-cover border-4 border-white shadow-lg"
+                    />
+                    <h2 className="text-2xl font-semibold mb-4 text-white text-left">About Our Dental Office</h2>
+                    <p className="text-gray-700 leading-relaxed">
+                        Our office is equipped with state-of-the-art technology to ensure the highest quality of care. We strive to create a welcoming and relaxing environment for all our patients, making your dental visits as comfortable and stress-free as possible.
+                    </p>
+                </div>
+            </div>
+        </section>
+    )
 }
