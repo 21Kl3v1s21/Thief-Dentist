@@ -50,14 +50,26 @@ export default function Navbar() {
         <span className="block w-6 h-0.5 bg-white"></span>
       </button>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex gap-4">
-        <Link href="/">Home</Link>
-        <Link href="/#about">About</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/appointment">Book</Link>
-        <Link href="/contact">Contact</Link>
-      </div>
+     {/* Desktop Menu: links + button in one flex container */}
+    <div className="hidden md:flex items-center gap-4 justify-center flex-1 text-center">
+      <Link
+        className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1"
+        href="/"
+      >
+        Home
+      </Link>
+      <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/#about">About</Link>
+      <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/services">Services</Link>
+      <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/contact">Contact</Link>
+
+      {/* Book Button — 1rem (ml-4) from links */}
+      <Link href="/appointment" className="ml-10">
+        <button className="bg-white text-sky-700 font-semibold px-4 py-2 rounded hover:bg-gray-100 hover:text-underline transition cursor-pointer">
+          Book
+        </button>
+      </Link>
+    </div>
+
 
       {/* Mobile Menu */}
       {menuOpen && (
@@ -65,8 +77,13 @@ export default function Navbar() {
           <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link href="/#about" onClick={() => setMenuOpen(false)}>About</Link>
           <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-          <Link href="/appointment" onClick={() => setMenuOpen(false)}>Book</Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link href="/appointment" onClick={() => setMenuOpen(false)}>
+          <span className="bg-white text-sky-700 px-4 py-2 rounded font-semibold text-center block">
+            Book
+          </span>
+        </Link>
+
         </div>
       )}
     </nav>

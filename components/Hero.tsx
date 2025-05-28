@@ -1,24 +1,25 @@
-"use client";
+'use client'
 
 import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden text-white py-24 px-4">
-      {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
+    <section className="relative text-white mt-20 py-34 px-4 overflow-hidden">
+      {/* Full-Width Background Image */}
+      <div className="absolute inset-0 -z-10 w-full h-full">
         <Image
           src="/images/bg-hero.jpg"
           alt="Dental background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          className="object-cover"
           quality={80}
           priority
         />
-        <div className="absolute inset-0 bg-sky-700/60" /> {/* Optional overlay */}
+        <div className="absolute inset-0 bg-sky-700/60" />
       </div>
 
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10" data-aos='fade-down' data-aos-delay='100'>
+      {/* Constrained content inside */}
+      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 z-10" data-aos="fade-down" data-aos-delay="100">
         {/* Left Text */}
         <div className="text-center md:text-left max-w-xl">
           <h1 className="text-5xl font-extrabold mb-4">SmileBright Dental</h1>
@@ -35,10 +36,10 @@ export default function Hero() {
             <a
               href="#about"
               className="border border-white px-6 py-3 rounded hover:bg-white hover:text-sky-700 transition"
-              onClick={e => {
-                e.preventDefault();
-                const el = document.getElementById('about');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              onClick={(e) => {
+                e.preventDefault()
+                const el = document.getElementById('about')
+                if (el) el.scrollIntoView({ behavior: 'smooth' })
               }}
             >
               Learn More
@@ -46,7 +47,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Image (Dentist) */}
+        {/* Right Image */}
         <div className="w-full md:w-1/2">
           <Image
             src="/images/dentist.jpg"
