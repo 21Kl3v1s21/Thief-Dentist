@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative text-white mt-16 sm:mt-20 py-32 sm:py-44 md:py-60 px-2 sm:px-4 overflow-hidden">
+    <section id='hero' className="relative text-white mt-16 sm:mt-20 py-32 sm:py-44 md:py-60 px-2 sm:px-4 overflow-hidden">
       {/* Full-Width Background Image */}
       <div className="absolute inset-0 -z-10 w-full h-full">
         <Image
@@ -29,9 +29,9 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="/appointment"
-              className="bg-white text-sky-700 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition hover:bg-sky-100"
+              className="bg-white text-sky-700 font-semibold px-6 py-3 rounded transition hover:bg-sky-100"
             >
-              Book an Appointment
+              Contact Us
             </a>
             <a
               href="#about"

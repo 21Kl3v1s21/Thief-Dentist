@@ -54,7 +54,7 @@ export default function Navbar() {
     <div className="hidden md:flex items-center gap-4 justify-center flex-1 text-center">
       <Link
         className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1"
-        href="/"
+        href="/#hero"
       >
         Home
       </Link>
@@ -62,13 +62,6 @@ export default function Navbar() {
       <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/#gallery">Gallery</Link>
       <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/#services">Services</Link>
       <Link className=" relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:-bottom-1" href="/#contact">Contact</Link>
-
-      {/* Book Button — 1rem (ml-4) from links */}
-      <Link href="/appointment" className="ml-10">
-        <button className="bg-white text-sky-700 font-semibold px-4 py-2 rounded hover:bg-sky-100 hover:text-underline transition cursor-pointer">
-          Book
-        </button>
-      </Link>
     </div>
 
 
@@ -77,14 +70,9 @@ export default function Navbar() {
         <div className="absolute top-16 left-0 w-full bg-sky-500 flex flex-col gap-4 p-4 md:hidden z-50">
           <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link href="/#about" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-          <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-          <Link href="/appointment" onClick={() => setMenuOpen(false)}>
-          <span className="bg-white text-sky-700 px-4 py-2 rounded font-semibold text-center block">
-            Book
-          </span>
-        </Link>
-
+          <Link href="/#gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
+          <Link href="/#services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link href="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}
     </nav>
