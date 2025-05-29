@@ -59,7 +59,7 @@ export default function ContactForm() {
           {error && <p className="text-red-600 mb-4">Something went wrong. Please try again.</p>}
 
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-            <input type="hidden" name="access_key" value="a213537d-07cd-4f01-824a-dc46d6b84ec8" />
+            <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3_KEY!} />
             <input type="hidden" name="subject" value="New Contact Form Submission" />
             <input type="hidden" name="from_name" value="SmileBright Dental Website" />
 
