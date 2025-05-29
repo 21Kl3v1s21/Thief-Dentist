@@ -29,7 +29,7 @@ export default function ContactForm() {
   return (
     <section id="contact" className="bg-sky-500/50 py-13 px-4">
       {/* Google Maps */}
-      <div className="max-w-6xl mx-auto mb-10">
+      <div className="max-w-6xl mx-auto mb-10" data-aos='fade-down'>
         <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10600.000000000001!2d10.752245!3d59.913869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e5d1e1c1e1d%3A0x1e1e1e1e1e1e1e1e!2sOslo!5e0!3m2!1sen!2sno!4v1680000000000!5m2!1sen!2sno"
         width="100%"
@@ -42,7 +42,7 @@ export default function ContactForm() {
       </div>
 
       {/* Info + Form */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start" data-aos='fade-down' data-aos-delay='100'>
         {/* Contact Info */}
         <div className="space-y-6">
           <h3 className="text-2xl font-semibold text-sky-700">Clinic Info</h3>

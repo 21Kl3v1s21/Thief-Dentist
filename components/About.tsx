@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
     return (
@@ -18,12 +19,18 @@ export default function About() {
                         Dr. Jane Doe is a highly experienced dentist dedicated to providing exceptional dental care to her patients. With years of experience and a passion for dentistry, she ensures every patient receives personalized and gentle treatment.
                     </p>
                     <div className="flex gap-4 mt-6 items-center justify-center text-center">
-                        <button className="bg-white text-sky-700 font-semibold px-5 py-2 rounded shadow hover:bg-sky-100 transition cursor-pointer">
+                        <Link
+                            href="/dentist"
+                            className="bg-white text-sky-700 font-semibold px-5 py-2 rounded shadow hover:bg-sky-100 transition"
+                            >
                             The Dentist
-                        </button>
-                        <button className="bg-white text-sky-700 font-semibold px-5 py-2 rounded shadow hover:bg-sky-100 transition cursor-pointer">
+                        </Link>
+                        <Link
+                            href="/office"
+                            className="bg-white text-sky-700 font-semibold px-5 py-2 rounded shadow hover:bg-sky-100 transition cursor-pointer"
+                        >
                             Our Office
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 {/* Right Side: About Our Dental Office */}
