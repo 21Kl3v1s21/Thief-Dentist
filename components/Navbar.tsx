@@ -67,7 +67,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-sky-500 flex flex-col gap-4 p-4 md:hidden z-50">
+        <div className="absolute top-20 left-0 w-full bg-sky-500/40 flex flex-col gap-4 p-4 md:hidden z-20">
           <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link href="/#about" onClick={() => setMenuOpen(false)}>About</Link>
           <Link href="/#gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>

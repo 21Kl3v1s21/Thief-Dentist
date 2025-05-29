@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AOSInit from "@/components/AOSInIt";
+import BackToTopButton from "@/components/BsckToTopButton";
 
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Navbar />
         <main className="min-h-screen p-4">{children}</main>
         <Footer />
+        <BackToTopButton/>
       </body>
     </html>
   )

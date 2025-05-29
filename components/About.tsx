@@ -27,16 +27,16 @@ export default function About() {
                     </div>
                 </div>
                 {/* Right Side: About Our Dental Office */}
-                <div className="flex-1 flex flex-col items-center md:items-start">
+                <div className="flex-1 flex flex-col items-center md:items-start pt-10 md:pt-20 w-full">
                     <Image
                         src="/images/office.jpg"
                         alt="Dental Office"
-                        width={600}
+                        width={500}
                         height={400}
-                        className="w-full h-130 rounded-lg mb-4 object-cover border-4 border-white shadow-lg"
+                        className="w-full max-w-xs sm:max-w-sm md:max-w-full h-48 sm:h-64 md:h-130 rounded-lg mb-4 object-cover border-4 border-white shadow-lg"
                     />
-                    <h2 className="text-2xl font-semibold mb-4 text-sky-600 text-left">About Our Dental Office</h2>
-                    <p className="text-gray-700 leading-relaxed">
+                    <h2 className="text-2xl font-semibold mb-4 text-sky-600 text-left w-full">About Our Dental Office</h2>
+                    <p className="text-gray-700 leading-relaxed w-full">
                         Our office is equipped with state-of-the-art technology to ensure the highest quality of care. We strive to create a welcoming and relaxing environment for all our patients, making your dental visits as comfortable and stress-free as possible.
                     </p>
                 </div>

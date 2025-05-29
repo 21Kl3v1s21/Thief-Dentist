@@ -27,7 +27,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="bg-sky-500/50 py-16 px-4">
+    <section id="contact" className="bg-sky-500/50 py-13 px-4">
       {/* Google Maps */}
       <div className="max-w-6xl mx-auto mb-10">
         <iframe

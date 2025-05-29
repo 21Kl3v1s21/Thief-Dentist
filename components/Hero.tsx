@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/appointment"
+              href="#contact"
               className="bg-white text-sky-700 font-semibold px-6 py-3 rounded transition hover:bg-sky-100"
             >
               Contact Us
